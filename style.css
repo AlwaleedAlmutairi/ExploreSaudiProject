@@ -1,0 +1,379 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0px;
+  background-color: whitesmoke;
+}
+
+
+header {
+    color: white;
+    padding: 15px 15px;
+    background-image: linear-gradient(to bottom right, rgb(1, 107, 1), rgb(0, 32, 0));
+}
+
+#inlinetop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logoTitle {
+    padding-right: 2%;
+}
+
+#logoTitle img{
+    max-width: 100px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#logoTitle p{
+    padding-right: 7px;
+}
+
+
+nav {
+    padding-left: 1%;
+}
+
+
+nav a {
+    font-size: .8em;
+    display: block;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#letsdiscover {
+    font-size: .9em;
+    background-color: rgb(0, 49, 0);
+    border: 1px solid black;
+    border-radius: 6px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.homecard {
+    text-align: center;
+}
+
+#tablehome {
+    border-spacing: 15px;
+    margin: auto;
+
+}
+
+#tablehome td {
+    border: 1px solid #ddd;
+    width: 600px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tdata1 {
+    
+    height: 200px;
+}
+
+.tdata2 {
+    color: wheat;
+    background-color: rgb(0, 49, 0) ;
+    background-image: linear-gradient(to bottom right, rgb(0, 49, 0), rgb(1, 116, 1));
+    height: 200px;
+}
+
+.tdata1 , .tdata2 {
+    height: 450px;
+}
+
+.tdata3 {
+    height: 200px;
+}
+
+.tdata1 , .tdata3 {
+    vertical-align: top;
+}
+
+.articlediscription , .articletitle {
+    padding: 0px 10px;
+    text-align: right;
+}
+
+footer p {
+    margin-top: 10%;
+    text-align: center;
+    opacity: 60%;
+}
+
+
+
+.cards-container a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    direction: rtl; 
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 968px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card img {
+    max-width: 1700px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+
+
+.details-container {
+    max-width: 900px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 2% auto auto auto;
+    text-align: right;
+    border-radius: 15px;
+}
+
+.details-container img {
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.rtl-list {
+    direction: rtl;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.greendetails{
+    background-color: rgba(0, 128, 0, 0.144);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.descdetail {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-grid {
+  display: flex;
+  gap: 15px; 
+}
+
+
+.img-box {
+  flex: 1;
+  height: 180px; 
+  border-radius: 10px; 
+  overflow: hidden;
+}
+
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.loginbox {
+    direction: rtl;
+    text-align: center;
+}
+
+
+#loginTable {
+    margin: auto;
+}
+
+
+#loginbtn{
+    margin-top: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.tablecontentP {
+    background-color: transparent;
+    direction: rtl;
+    max-width: 1900px;
+    border: 0px solid transparent;
+    box-shadow: 0 0px 0px transparent;
+}
+
+
+.tablecontent{
+    background-color: rgba(220, 220, 220, 0.397);
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablecontent th{
+    border-bottom: solid rgba(0, 0, 0, 0.288) 1px;
+}
+
+.tablecontent td{
+    border-bottom: solid rgba(0, 0, 0, 0.288) 1px;
+    background-color: white;
+}
+th , td {
+    
+}
+
+.tablecontent th , .tablecontent td  {
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.dashboarddescription{
+    max-width: 100px;
+}
+
+
+.actions{
+    align-items: center;
+    text-align: center;
+}
+
+.editdash{
+    display: inline;
+    background-color: rgb(255, 170, 12);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.deletedash{
+    display: inline;
+    background-color: rgb(255, 53, 53);
+        padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 411px) {
+    .editdash{
+    display: block;
+    padding: 1px;
+    margin-left: 10px;
+    }
+
+    .deletedash{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+    padding: 1px;
+    }
+}
+
+.addcontentbtn{
+    display: block;
+    background-color: rgb(66, 158, 243);
+    color: white;
+    padding: 10px 50px;
+    margin-bottom: 30px;
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#mainimg , #gallarym {
+    padding-right: 80px;
+}
+
+
+.tableaddcontent th , .tableaddcontent td {
+    padding: 8px;
+}
+
+#updatebtn{
+    margin-top: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(236, 159, 15);
+    color: white;
+    cursor: pointer;
+}
