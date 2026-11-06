@@ -1,6 +1,6 @@
 # CSC 457
 
-- [ ] Git repo
+- [x] Git repo
 - [x] Public Pages
 - [x] HTML/CSS
 - [ ] Javascript
@@ -11,19 +11,19 @@
 	- [ ] Saudi Clock
 - [ ] PHP
 	- [ ] Form Validation
-	- [ ] Add DB data to page
+	- [x] Add DB data to page
 	- [ ] SQL Injection
 	- [ ] Authentication (Admin Login)
-	- [ ] Restriction (Admin page access)
+	- [x] Restriction (Admin page access) -- (i only create Restriction pages and link AddContent Page With Database And images save on server) -- you must make auth with these pages
 	- [ ] Logout
 	- [ ] CRUD
-		- [ ] Create
-		- [ ] Read
+		- [x] Create
+		- [x] Read -- Remaining Admin Dashboard Retrive Data From Database
 		- [ ] Update
 		- [ ] Delete
 	- [ ] Protected area
-- [ ] Database
+- [x] Database
 	- [x] Main Table
-	- [ ] Sub tables
+	- [x] Sub tables
 	- [x] Admin Table
 - [ ] Deployment
