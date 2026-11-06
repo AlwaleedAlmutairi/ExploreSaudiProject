@@ -28,7 +28,7 @@
 
         <main>
             <div class="details-container loginbox">
-                <form action="login.php" method="POST">
+                <form action="addContentDatabase.php" method="POST" enctype="multipart/form-data">
                     <h2>اضافة محتوى</h2>
                     <br>
                     <hr>
@@ -40,8 +40,8 @@
                             <th><input name="cityname" type="text" id="cityn"></th>
                         </tr>
                         <tr>
-                            <th><label for="passw"><b>الوصف</b></label></th>
-                            <th><textarea rows="5" cols="21"></textarea></th>
+                            <th><label for="regDesc2"><b>الوصف</b></label></th>
+                            <th><textarea name="regDesc" id="regDesc2" rows="5" cols="21"></textarea></th>
                         </tr>
                         <tr>
                             <th><label for="ginfo"><b>معلومات عامة</b></label></th>
@@ -57,7 +57,7 @@
                         </tr>
                         <tr>
                             <th><label for="gallarym"><b>معرض الصور</b></label></th>
-                            <th><input type="file" id="gallarym" name="gallaryimages" multiple></th>
+                            <th><input type="file" id="gallarym" name="gallaryimages[]" multiple></th>
                         </tr>
                         <tr><th colspan="2"><input type="submit" value="اضافة" id="loginbtn"></th></tr>
                     </table>
