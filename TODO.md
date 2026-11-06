@@ -1,0 +1,29 @@
+# CSC 457
+
+- [ ] Git repo
+- [x] Public Pages
+- [x] HTML/CSS
+- [ ] Javascript
+	- [ ] Image Slider
+	- [ ] Form Validation
+	- [ ] Deletion alert
+	- [ ] Deletion successful/error
+	- [ ] Saudi Clock
+- [ ] PHP
+	- [ ] Form Validation
+	- [ ] Add DB data to page
+	- [ ] SQL Injection
+	- [ ] Authentication (Admin Login)
+	- [ ] Restriction (Admin page access)
+	- [ ] Logout
+	- [ ] CRUD
+		- [ ] Create
+		- [ ] Read
+		- [ ] Update
+		- [ ] Delete
+	- [ ] Protected area
+- [ ] Database
+	- [x] Main Table
+	- [ ] Sub tables
+	- [x] Admin Table
+- [ ] Deployment
