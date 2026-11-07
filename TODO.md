@@ -1,0 +1,53 @@
+# CSC 457
+
+- [x] Git repo
+- [x] Public Pages
+- [x] HTML/CSS
+	- [ ] Change indicated lang in HTML meta
+	- [x] Rename Gallary to Gallery
+	- [ ] Consistent card size in gallery page
+	- [ ] make cards in home page clickable
+	- [ ] إملاء
+- [ ] Javascript
+	- [ ] Image Slider
+	- [ ] Form Validation
+	- [x] Deletion alert
+	- [ ] ~~Deletion successful/error~~ NOT NEEDED
+	- [ ] Dark Mode
+	- [ ] Saudi Clock (live)
+- [ ] PHP
+	- [ ] Change echo to alert or something (Not necessary)
+	- [ ] disable mysqli in my php systemwide config
+	- [ ] Delete regions folder (unused)??
+	- [x] Form Validation
+		- [x] Login form
+		- [x] Add form
+		- [x] Update form
+		- [x] Remove form?
+	- [x] Add DB data to page
+		- [x] Gallery page
+		- [x] Admin dashboard
+	- [x] SQL Injection
+	- [x] Authentication (Admin Login)
+	- [x] Restriction (Admin page access)
+		- [x] Create restricted pages (AdminDasboard, addContent, updateContent)
+		- [x] Prevent non-logged in users from accessing
+	- [x] Logout
+	- [x] CRUD
+		- [x] Fix old data
+			- [x] Change path delimiter
+			- [x] Consistent compliant naming
+		- [x] Create
+			- [x] New Create Handler
+		- [x] Read
+			- [x] Gallery page
+			- [x] Admin Dashboard
+		- [x] Update
+		- [x] Delete
+			- [x] Delete warning.
+	- [x] Protected area
+- [x] Database
+	- [x] Main Table
+	- [x] Sub tables
+	- [x] Admin Table
+- [ ] Deployment

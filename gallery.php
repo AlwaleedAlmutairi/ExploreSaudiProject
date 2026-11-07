@@ -14,7 +14,7 @@
             <div id="inlinetop">
                 <nav>
                     <a href="index.html">الرئيسية</a>
-                    <a href="gallary.php">معرض المناطق</a>
+                    <a href="gallery.php">معرض المناطق</a>
                     <a href="login.html">دخول المشرف</a>
                     <a href="">الوضع الليلي</a>
 
@@ -33,7 +33,7 @@
                 <?php
                     include("connection.php");
                     
-                    $sql = "SELECT * FROM citys";
+                    $sql = "SELECT * FROM cities";
                     $result=mysqli_query($conn, $sql);
 
                     if(!$result){

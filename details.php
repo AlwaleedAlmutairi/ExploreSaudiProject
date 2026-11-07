@@ -12,7 +12,7 @@
             <div id="inlinetop">
                 <nav>
                     <a href="index.html">الرئيسية</a>
-                    <a href="gallary.php">معرض المناطق</a>
+                    <a href="gallery.php">معرض المناطق</a>
                     <a href="login.html">دخول المشرف</a>
                     <a href="">الوضع الليلي</a>
 
@@ -32,7 +32,7 @@
                 if (isset($_GET['id'])){
                     $id= $_GET['id'];
                     include("connection.php");
-                    $sql = "SELECT c.id, c.name, c.description, c.main_image, (SELECT GROUP_CONCAT(name SEPARATOR ',') FROM famous WHERE city_id = c.id) AS famous_list, (SELECT GROUP_CONCAT(info SEPARATOR ',') FROM general WHERE city_id = c.id) AS general_list, (SELECT GROUP_CONCAT(image_path SEPARATOR ',') FROM gallery WHERE city_id = c.id) AS gallery_images FROM citys c WHERE c.id =$id;";
+                    $sql = "SELECT c.id, c.name, c.description, c.main_image, (SELECT GROUP_CONCAT(name SEPARATOR ',') FROM famous WHERE city_id = c.id) AS famous_list, (SELECT GROUP_CONCAT(info SEPARATOR ',') FROM general WHERE city_id = c.id) AS general_list, (SELECT GROUP_CONCAT(image_path SEPARATOR ',') FROM gallery WHERE city_id = c.id) AS gallery_images FROM cities c WHERE c.id =$id;";
 
                     $result=mysqli_query($conn, $sql);
 

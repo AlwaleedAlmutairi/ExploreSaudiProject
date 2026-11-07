@@ -12,7 +12,7 @@
             <div id="inlinetop">
                 <nav>
                     <a href="index.html">الرئيسية</a>
-                    <a href="gallary.php">معرض المناطق</a>
+                    <a href="gallery.php">معرض المناطق</a>
                     <a href="login.html">دخول المشرف</a>
                     <a href="">الوضع الليلي</a>
 
@@ -30,6 +30,9 @@
             <div class="details-container loginbox">
                 <form action="login.php" method="POST">
                     <h2>تسجيل دخول المشرفين</h2>
+                    <p class="error">
+                        <?php echo $_GET['error']; ?>
+                    </p>
                     <br>
                     <hr>
                     <br>

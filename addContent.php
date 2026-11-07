@@ -1,3 +1,5 @@
+<?php include "auth.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,8 +14,8 @@
             <div id="inlinetop">
                 <nav>
                     <a href="index.html">الرئيسية</a>
-                    <a href="gallary.php">معرض المناطق</a>
-                    <a href="login.html">تسجيل الخروج</a>
+                    <a href="gallery.php">معرض المناطق</a>
+                    <a href="logout.php">تسجيل الخروج</a>
                     <a href="">الوضع الليلي</a>
 
                 </nav>
@@ -28,8 +30,8 @@
 
         <main>
             <div class="details-container loginbox">
-                <form action="" method="POST" enctype="multipart/form-data">
-                    <h2>تعديل المحتوى</h2>
+                <form action="addContentHandler.php" method="POST" enctype="multipart/form-data">
+                    <h2>اضافة محتوى</h2>
                     <br>
                     <hr>
                     <br>
@@ -40,26 +42,26 @@
                             <th><input name="cityname" type="text" id="cityn"></th>
                         </tr>
                         <tr>
-                            <th><label for="passw"><b>الوصف</b></label></th>
-                            <th><textarea rows="5" cols="21"></textarea></th>
+                            <th><label for="regDesc2"><b>الوصف</b></label></th>
+                            <th><textarea name="description" id="regDesc2" rows="5" cols="21"></textarea></th>
                         </tr>
                         <tr>
                             <th><label for="ginfo"><b>معلومات عامة</b></label></th>
-                            <th><input name="generalinfo" type="text" id="ginfo" placeholder="ضع فاصلة بين العناصر (أ,ب)"></th>
+                            <th><textarea name="generalinfo" type="text" id="ginfo" rows="10" cols="42" placeholder="ضع فاصلة بين العناصر (أ,ب)"></textarea></th>
                         </tr>
                         <tr>
                             <th><label for="famousplac"><b>أبرز المعالم</b></label></th>
-                            <th><input name="famousplaces" type="text" id="famousplac" placeholder="ضع فاصلة بين العناصر (أ,ب)"></th>
+                            <th><textarea name="famousplaces" type="text" id="famousplac" rows="10" cols="42" placeholder="ضع فاصلة بين العناصر (أ,ب)"></textarea></th>
                         </tr>
                         <tr>
                             <th><label for="mainimg"><b>الصورة الرئيسية</b></label></th>
                             <th><input type="file" id="mainimg" name="mainimage" ></th>
                         </tr>
                         <tr>
-                            <th><label for="gallarym"><b>معرض الصور</b></label></th>
-                            <th><input type="file" id="gallarym" name="gallaryimages" multiple></th>
+                            <th><label for="gallerym"><b>معرض الصور</b></label></th>
+                            <th><input type="file" id="gallerym" name="galleryimages[]" multiple></th>
                         </tr>
-                        <tr><th colspan="2"><input type="submit" value="تعديل" id="updatebtn"></th></tr>
+                        <tr><th colspan="2"><input type="submit" value="اضافة" id="loginbtn"></th></tr>
                     </table>
                 </form>
             </div>
