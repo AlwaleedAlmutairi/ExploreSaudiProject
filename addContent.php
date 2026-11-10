@@ -9,7 +9,7 @@
         <link rel = "icon" href = "logo/logo.svg">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="dark-mode">
+    <body>
         <header>
             <div id="inlinetop">
                 <nav>
