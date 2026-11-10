@@ -1,7 +1,7 @@
 <?php
 
-include("auth.php");
-include("connection.php");
+require "auth.php";
+include "connection.php";
 
 
 //trim inputs
