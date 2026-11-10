@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(isset($_SESSION['access']) && $_SESSION['access']==true){
+    header("Location: adminDashboard.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,8 +21,8 @@
                 <nav>
                     <a href="index.html">الرئيسية</a>
                     <a href="gallery.php">معرض المناطق</a>
-                    <a href="login.html">دخول المشرف</a>
-                    <a href="">الوضع الليلي</a>
+                    <a href="loginPage.php">دخول المشرف</a>
+                    <a id="theme-toggle">الوضع الليلي</a>
 
                 </nav>
                 <div id="logoTitle">
@@ -28,10 +36,9 @@
 
         <main>
             <div class="details-container loginbox">
-                <form action="login.php" method="POST">
+                <form action="login.php" method="POST" id="loginform">
                     <h2>تسجيل دخول المشرفين</h2>
                     <p class="error">
-                        <?php echo $_GET['error']; ?>
                     </p>
                     <br>
                     <hr>
@@ -46,15 +53,16 @@
                             <th><label for="passw"><b>كلمة المرور :</b></label></th>
                             <th><input name="password" type="password" id="passw"></th>
                         </tr>
-                        <tr><th colspan="2"><input type="submit" value="دخول" id="loginbtn"></th></tr>
+                        <tr><th colspan="2"><button type="submit" value="دخول" id="loginbtn">دخول</button></th></tr>
                     </table>
                 </form>
             </div>
         </main>
 
 
-        <footer>
+        <footer id="footerhome">
             <p><small>تم تصميم الموقع من قبل طلاب جامعة الملك سعود &copy;<br>الوليد المطيري , البراء الموصللي </small></p>
         </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>

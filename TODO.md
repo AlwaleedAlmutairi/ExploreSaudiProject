@@ -3,22 +3,15 @@
 - [x] Git repo
 - [x] Public Pages
 - [x] HTML/CSS
-	- [ ] Change indicated lang in HTML meta
+	- [x] Change indicated lang in HTML meta
 	- [x] Rename Gallary to Gallery
-	- [ ] Consistent card size in gallery page
-	- [ ] make cards in home page clickable
-	- [ ] إملاء
-- [ ] Javascript
-	- [ ] Image Slider
-	- [ ] Form Validation
+- [x] Javascript
+	- [x] Form Validation
 	- [x] Deletion alert
-	- [ ] ~~Deletion successful/error~~ NOT NEEDED
-	- [ ] Dark Mode
-	- [ ] Saudi Clock (live)
-- [ ] PHP
-	- [ ] Change echo to alert or something (Not necessary)
-	- [ ] disable mysqli in my php systemwide config
-	- [ ] Delete regions folder (unused)??
+	- [x] Dark Mode
+	- [x] Saudi Clock (live)
+- [x] PHP
+	- [x] Delete regions folder (unused)??
 	- [x] Form Validation
 		- [x] Login form
 		- [x] Add form

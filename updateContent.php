@@ -16,7 +16,7 @@
                     <a href="index.html">الرئيسية</a>
                     <a href="gallery.php">معرض المناطق</a>
                     <a href="logout.php">تسجيل الخروج</a>
-                    <a href="">الوضع الليلي</a>
+                    <a id="theme-toggle">الوضع الليلي</a>
 
                 </nav>
                 <div id="logoTitle">
@@ -30,7 +30,7 @@
 
         <main>
             <div class="details-container loginbox">
-                <form action="updateContentHandler.php" method="POST" enctype="multipart/form-data">
+                <form action="updateContentHandler.php" method="POST" enctype="multipart/form-data" id="Updatecontform">
                 <?php
                         include("connection.php");
 
@@ -50,7 +50,7 @@
                         </tr>
                         <tr>
                             <th><label for="passw"><b>الوصف</b></label></th>
-                            <th><textarea name="description" rows="5" cols="21"> <?php echo htmlspecialchars($row->description) ?> </textarea></th>
+                            <th><textarea name="description" rows="5" cols="21" id="cityd"> <?php echo htmlspecialchars($row->description) ?> </textarea></th>
                         </tr>
                         <!--- Don't change php placement to prevent extra whitespace --->
                         <tr>
@@ -67,22 +67,23 @@
                         </tr>
                         <tr>
                             <th><label for="mainimg"><b>الصورة الرئيسية (لا تدخل شيئًا للإبقاء على الصورة)</b></label></th>
-                            <th><input type="file" id="mainimg" name="mainimage""></th>
+                            <th><input type="file" id="mainimg" name="mainimage"></th>
                         </tr>
                         <tr>
                             <th><label for="gallerym"><b>تغيير الصور في معرض الصور (لا تدخل شيئًا للإبقاء على الصور)</b></label></th>
                             <!--- [] to make php see it as an array --->
                             <th><input type="file" id="gallerym" name="galleryimages[]" multiple></th>
                         </tr>
-                        <tr><th colspan="2"><input type="submit" value="تعديل" id="updatebtn"></th></tr>
+                        <tr><th colspan="2"><button type="submit" value="تعديل" id="updatebtn">تعديل</button></th></tr>
                     </table>
                 </form>
             </div>
         </main>
 
 
-        <footer>
+        <footer id="footerhome">
             <p><small>تم تصميم الموقع من قبل طلاب جامعة الملك سعود &copy;<br>الوليد المطيري , البراء الموصللي </small></p>
         </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>

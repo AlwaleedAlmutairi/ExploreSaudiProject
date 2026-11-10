@@ -16,7 +16,7 @@
                     <a href="index.html">الرئيسية</a>
                     <a href="gallery.php">معرض المناطق</a>
                     <a href="logout.php">تسجيل الخروج</a>
-                    <a href="">الوضع الليلي</a>
+                    <a id="theme-toggle">الوضع الليلي</a>
 
                 </nav>
                 <div id="logoTitle">
@@ -65,8 +65,9 @@
         </main>
 
 
-        <footer>
+        <footer id="footerhome">
             <p><small>تم تصميم الموقع من قبل طلاب جامعة الملك سعود &copy;<br>الوليد المطيري , البراء الموصللي </small></p>
         </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
