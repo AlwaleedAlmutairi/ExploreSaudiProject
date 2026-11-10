@@ -22,23 +22,36 @@ themeToggleBtn.addEventListener('click', () => {
 
 
 
-/*Date Time */
+/* Live time saudi arabia */
 document.addEventListener('DOMContentLoaded', function() {
     const place = document.getElementById("footerhome");
-    const elment = document.createElement("p");
-    const currentDate = new Date();
-    const options = { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-    };
-    const arabicDate = new Intl.DateTimeFormat('ar-SA', options).format(currentDate);
+    const element = document.createElement("p");
+    
 
-    const textNode = document.createTextNode("تم تحميل الصفحة بيوم   " + arabicDate);
-    elment.appendChild(textNode);
-    elment.style = "font-weight: bold; font-size:.7em; opacity:0.7; margin:15px;";
-    place.appendChild(elment);
+    element.style = "font-weight: bold; font-size:.7em; opacity:0.7; margin:15px;";
+    place.appendChild(element);
+
+
+    const options = {
+        timeZone: 'Asia/Riyadh',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true 
+    };
+
+    const formatter = new Intl.DateTimeFormat('ar-SA', options);
+
+
+    function updateTime() {
+        const now = new Date();
+        const arabicTime = formatter.format(now);
+        element.textContent = "التوقيت الحالي في المملكة العربية السعودية: " + arabicTime;
+    }
+
+
+    updateTime();
+    setInterval(updateTime, 1000);
 });
 
 
